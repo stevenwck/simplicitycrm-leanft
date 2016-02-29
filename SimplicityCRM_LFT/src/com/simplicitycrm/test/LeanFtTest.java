@@ -9,6 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.hp.lft.report.ReportException;
+import com.hp.lft.report.Reporter;
 import com.hp.lft.report.Status;
 import com.hp.lft.sdk.*;
 import com.hp.lft.sdk.web.Browser;
@@ -46,56 +47,123 @@ public class LeanFtTest extends UnitTestClassBase {
 
 	@Before
 	public void setUp() throws Exception {
-		browser = BrowserFactory.launch(BrowserType.CHROME);
+		// browser = BrowserFactory.launch(BrowserType.CHROME);
+		browser = BrowserFactory.launch(BrowserType.FIREFOX);
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		
+		browser.close();
 	}
 
 	@Test
 	public void test() throws GeneralLeanFtException {
-		browser.navigate("http://swongdemo.cloudapp.net/sugarcrm");
-		EditField username = browser.describe(EditField.class, new EditFieldDescription.Builder()
-				.type("text").tagName("INPUT").name("user_name").build());
-		EditField password = browser.describe(EditField.class, new EditFieldDescription.Builder()
-				.type("password").tagName("INPUT").name("user_password").build());
-		Button loginBtn = browser.describe(Button.class, new ButtonDescription.Builder()
-				.buttonType("submit").tagName("INPUT").name("Log In").build());
-		username.setValue("admin");
-		password.setSecure("56ce2c1d8de9cb7d81009affe807e0304dcff4c10b0d84cc0153b1c9");
-		loginBtn.click();
-		
-		Link logoutLink = browser.describe(Link.class, new LinkDescription.Builder()
-				.tagName("A").innerText("Log Out").build());
-		
-		if (logoutLink.exists())
+
+		// Report
+		try
 		{
-			logoutLink.click();
-			passed = true;
-			browser.close();
+			Reporter.startReportingContext("SimplicityCRM LeanFT Test");
+			Reporter.startTest("Login Logout Test");
+
+			ReportStep("Navigate to Application","Navigate to the Application", this.LaunchApplication());
+			ReportStep("Log In","Log In to the Application",this.TestLogin()); 
+			ReportStep("Log Out","Log Out of the Application",this.TestLogout());
 			
-		} else {
-			// no logout link.
-			passed = false;
+			Reporter.endTest();
+			
+			System.out.println(Reporter.generateReport());
+	
+		} catch (ReportException re) {
+			re.printStackTrace();
 		}
 		
-		
-		// Report
-		try {
-			if (passed) {
-				UnitTestBase.getReporter().reportEvent("Logout", "Logout Link found and clicked", Status.Passed);
-			}
+	}
+	
+	public void ReportStep(String name, String desc, boolean passed)
+	{
+		try
+		{
+			if (passed)
+				Reporter.reportEvent(name,  desc, Status.Passed);
 			else
-			{
-				UnitTestBase.getReporter().reportEvent("Logout", "Logout Link cannot be found", Status.Failed);
-			}
-		} catch (ReportException e) {
-			// TODO Auto-generated catch block
+				Reporter.reportEvent(name, desc, Status.Failed);
+		}
+		catch (ReportException re) {
+			re.printStackTrace();
+		}
+	}
+	
+	public boolean LaunchApplication()
+	{
+		try
+		{
+			browser.navigate("http://swongdemo.cloudapp.net/sugarcrm");
+			
+			// Verify Login Button is shown on the screen.
+			Button loginBtn = browser.describe(Button.class, new ButtonDescription.Builder()
+					.buttonType("submit").tagName("INPUT").name("Log In").build());
+			return loginBtn.exists();
+
+		} catch (Exception e)
+		{
 			e.printStackTrace();
+			return false;
+		}
+		
+	}
+	
+	public boolean TestLogin()
+	{
+		try
+		{
+			EditField username = browser.describe(EditField.class, new EditFieldDescription.Builder()
+					.type("text").tagName("INPUT").name("user_name").build());
+			EditField password = browser.describe(EditField.class, new EditFieldDescription.Builder()
+					.type("password").tagName("INPUT").name("user_password").build());
+			Button loginBtn = browser.describe(Button.class, new ButtonDescription.Builder()
+					.buttonType("submit").tagName("INPUT").name("Log In").build());
+			username.setValue("admin");
+			password.setSecure("56ce2c1d8de9cb7d81009affe807e0304dcff4c10b0d84cc0153b1c9");
+			loginBtn.click();
+			
+			// Logout link is present only after successful login
+			// Verification checks for the presence of the Logout link.
+			Link logoutLink = browser.describe(Link.class, new LinkDescription.Builder()
+					.tagName("A").innerText("Log Out").build());
+			
+			return logoutLink.exists();
+							
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+			return false;
 		}
 		
 	}
 
+
+	public boolean TestLogout()
+	{
+		try {
+			Link logoutLink = browser.describe(Link.class, new LinkDescription.Builder()
+					.tagName("A").innerText("Log Out").build());
+			logoutLink.click();
+			
+			// Login screen is shown after logout is successful
+			// So check for the existence of the Login button after logpout
+			Button loginBtn = browser.describe(Button.class, new ButtonDescription.Builder()
+					.buttonType("submit").tagName("INPUT").name("Log In").build());
+			return loginBtn.exists();		
+			
+		} catch (GeneralLeanFtException ge) {
+			ge.printStackTrace();
+			return false;
+		}
+		
+	}
+	
+	
+	
 }
  

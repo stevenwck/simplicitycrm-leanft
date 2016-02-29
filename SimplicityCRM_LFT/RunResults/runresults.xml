@@ -1,7 +1,7 @@
 <Results>
     <GeneralInfo>
         <Name/>
-        <RunStartTime>2016-02-25 09:29:27.115</RunStartTime>
+        <RunStartTime>2016-02-29 11:03:15.308</RunStartTime>
         <Timezone>AUS Eastern Standard Time</Timezone>
         <OrchestrationToolName>JUnit</OrchestrationToolName>
         <OrchestrationToolVersion/>
@@ -11,8 +11,8 @@
         <Data>
             <Name>Run Results</Name>
             <Description> </Description>
-            <StartTime>2016-02-25 09:29:27.115</StartTime>
-            <Duration>25</Duration>
+            <StartTime>2016-02-29 11:03:15.308</StartTime>
+            <Duration>40</Duration>
             <Result>Passed</Result>
             <Links/>
             <Extension>
@@ -37,8 +37,8 @@
             <Data>
                 <Name>com.simplicitycrm.test</Name>
                 <Description>Version: N/A</Description>
-                <StartTime>2016-02-25 09:29:27.180</StartTime>
-                <Duration>25</Duration>
+                <StartTime>2016-02-29 11:03:15.332</StartTime>
+                <Duration>40</Duration>
                 <Result>Passed</Result>
                 <Links/>
                 <Extension>
@@ -51,8 +51,8 @@
                 <Data>
                     <Name>com.simplicitycrm.test.LeanFtTest</Name>
                     <Description/>
-                    <StartTime>2016-02-25 09:29:27.180</StartTime>
-                    <Duration>25</Duration>
+                    <StartTime>2016-02-29 11:03:15.332</StartTime>
+                    <Duration>40</Duration>
                     <Result>Passed</Result>
                     <Links/>
                     <Extension>
@@ -65,8 +65,8 @@
                     <Data>
                         <Name>test</Name>
                         <Description/>
-                        <StartTime>2016-02-25 09:29:27.183</StartTime>
-                        <Duration>25</Duration>
+                        <StartTime>2016-02-29 11:03:15.335</StartTime>
+                        <Duration>5</Duration>
                         <Result>Passed</Result>
                         <Links/>
                         <Extension>
@@ -78,8 +78,8 @@
                     <ReportNode type="Step">
                         <Data>
                             <Name>Browser.launch</Name>
-                            <Description>&lt;style&gt;.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}&lt;/style&gt;&lt;table class='ex-table'&gt;&lt;tr&gt;&lt;td class='ex-name'&gt;arg0&lt;/td&gt;&lt;td class='ex-value'&gt;CHROME&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
-                            <StartTime>2016-02-25 09:29:27.232</StartTime>
+                            <Description>&lt;style&gt;.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}&lt;/style&gt;&lt;table class='ex-table'&gt;&lt;tr&gt;&lt;td class='ex-name'&gt;arg0&lt;/td&gt;&lt;td class='ex-value'&gt;FIREFOX&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+                            <StartTime>2016-02-29 11:03:15.377</StartTime>
                             <Duration>0</Duration>
                             <Result>Passed</Result>
                             <Links/>
@@ -88,25 +88,55 @@
                                     <TestObject>
                                         <Path/>
                                         <Operation>launch</Operation>
-                                        <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>CHROME</td></tr></table>]]></OperationData>
+                                        <OperationData><![CDATA[<style>.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}</style><table class='ex-table'><tr><td class='ex-name'>arg0</td><td class='ex-value'>FIREFOX</td></tr></table>]]></OperationData>
                                         <Properties/>
                                     </TestObject>
                                     <IconKey>Browser</IconKey>
                                     <CustomUIElements>
                                         <DescriptionLabel>Data</DescriptionLabel>
-                                        <FlowTreeNodeCaption>Browser.launch("Chrome")</FlowTreeNodeCaption>
+                                        <FlowTreeNodeCaption>Browser.launch("Firefox")</FlowTreeNodeCaption>
                                     </CustomUIElements>
                                     <HideContextInfo>true</HideContextInfo>
                                 </Any>
                             </Extension>
                         </Data>
                     </ReportNode>
+                    <ReportNode type="Region">
+                        <Data>
+                            <Name>SimplicityCRM LeanFT Test</Name>
+                            <Description/>
+                            <StartTime>2016-02-29 11:03:19.986</StartTime>
+                            <Duration>0</Duration>
+                            <Result>Passed</Result>
+                            <Links/>
+                            <Extension>
+                                <Any>
+                                    <IconKey>Region</IconKey>
+                                </Any>
+                            </Extension>
+                        </Data>
+                    </ReportNode>
+                </ReportNode>
+                <ReportNode type="Test">
+                    <Data>
+                        <Name>Login Logout Test</Name>
+                        <Description/>
+                        <StartTime>2016-02-29 11:03:19.986</StartTime>
+                        <Duration>36</Duration>
+                        <Result>Passed</Result>
+                        <Links/>
+                        <Extension>
+                            <Any>
+                                <IconKey>Test</IconKey>
+                            </Any>
+                        </Extension>
+                    </Data>
                     <ReportNode type="Context">
                         <Data>
-                            <Name>Web.Browser.Browser</Name>
+                            <Name>Web.Browser.Mozilla Firefox Start Page</Name>
                             <Description/>
-                            <StartTime>2016-02-25 09:29:32.468</StartTime>
-                            <Duration>8</Duration>
+                            <StartTime>2016-02-29 11:03:20.513</StartTime>
+                            <Duration>10</Duration>
                             <Result>Passed</Result>
                             <Links/>
                             <Extension>
@@ -115,7 +145,7 @@
                                         <Path>
                                             <Object>
                                                 <Type>Web.Browser</Type>
-                                                <Name><![CDATA[Browser]]></Name>
+                                                <Name><![CDATA[Mozilla Firefox Start Page]]></Name>
                                             </Object>
                                         </Path>
                                         <Operation/>
@@ -132,9 +162,9 @@
                         </Data>
                         <ReportNode type="Step">
                             <Data>
-                                <Name>Browser.navigate</Name>
+                                <Name>Mozilla Firefox Start Page.navigate</Name>
                                 <Description>&lt;style&gt;.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}&lt;/style&gt;&lt;table class='ex-table'&gt;&lt;tr&gt;&lt;td class='ex-name'&gt;arg0&lt;/td&gt;&lt;td class='ex-value'&gt;http://swongdemo.cloudapp.net/sugarcrm&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
-                                <StartTime>2016-02-25 09:29:31.925</StartTime>
+                                <StartTime>2016-02-29 11:03:19.991</StartTime>
                                 <Duration>1</Duration>
                                 <Result>Passed</Result>
                                 <Links/>
@@ -144,7 +174,7 @@
                                             <Path>
                                                 <Object>
                                                     <Type>Web.Browser</Type>
-                                                    <Name><![CDATA[Browser]]></Name>
+                                                    <Name><![CDATA[Mozilla Firefox Start Page]]></Name>
                                                 </Object>
                                             </Path>
                                             <Operation>navigate</Operation>
@@ -161,11 +191,26 @@
                             </Data>
                         </ReportNode>
                     </ReportNode>
+                    <ReportNode type="CustomStep">
+                        <Data>
+                            <Name>Navigate to Application</Name>
+                            <Description>Navigate to the Application</Description>
+                            <StartTime>2016-02-29 11:03:29.638</StartTime>
+                            <Duration>0</Duration>
+                            <Result>Passed</Result>
+                            <Links/>
+                            <Extension>
+                                <Any>
+                                    <IconKey>CustomStep</IconKey>
+                                </Any>
+                            </Extension>
+                        </Data>
+                    </ReportNode>
                     <ReportNode type="Context">
                         <Data>
                             <Name>Web.Browser.Simplicity</Name>
                             <Description/>
-                            <StartTime>2016-02-25 09:29:39.842</StartTime>
+                            <StartTime>2016-02-29 11:03:30.639</StartTime>
                             <Duration>1</Duration>
                             <Result>Passed</Result>
                             <Links/>
@@ -194,7 +239,7 @@
                             <Data>
                                 <Name>Web.Page.Simplicity</Name>
                                 <Description/>
-                                <StartTime>2016-02-25 09:29:39.841</StartTime>
+                                <StartTime>2016-02-29 11:03:30.639</StartTime>
                                 <Duration>1</Duration>
                                 <Result>Passed</Result>
                                 <Links/>
@@ -227,7 +272,7 @@
                                 <Data>
                                     <Name>Web.EditField.user_name</Name>
                                     <Description/>
-                                    <StartTime>2016-02-25 09:29:39.841</StartTime>
+                                    <StartTime>2016-02-29 11:03:30.639</StartTime>
                                     <Duration>1</Duration>
                                     <Result>Passed</Result>
                                     <Links/>
@@ -264,8 +309,8 @@
                                     <Data>
                                         <Name>user_name.setValue</Name>
                                         <Description>&lt;style&gt;.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}&lt;/style&gt;&lt;table class='ex-table'&gt;&lt;tr&gt;&lt;td class='ex-name'&gt;arg0&lt;/td&gt;&lt;td class='ex-value'&gt;admin&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
-                                        <StartTime>2016-02-25 09:29:32.503</StartTime>
-                                        <Duration>8</Duration>
+                                        <StartTime>2016-02-29 11:03:29.644</StartTime>
+                                        <Duration>1</Duration>
                                         <Result>Passed</Result>
                                         <Links/>
                                         <Extension>
@@ -318,7 +363,7 @@
                         <Data>
                             <Name>Web.Browser.Simplicity</Name>
                             <Description/>
-                            <StartTime>2016-02-25 09:29:40.380</StartTime>
+                            <StartTime>2016-02-29 11:03:31.597</StartTime>
                             <Duration>1</Duration>
                             <Result>Passed</Result>
                             <Links/>
@@ -347,7 +392,7 @@
                             <Data>
                                 <Name>Web.Page.Simplicity</Name>
                                 <Description/>
-                                <StartTime>2016-02-25 09:29:40.379</StartTime>
+                                <StartTime>2016-02-29 11:03:31.597</StartTime>
                                 <Duration>1</Duration>
                                 <Result>Passed</Result>
                                 <Links/>
@@ -380,7 +425,7 @@
                                 <Data>
                                     <Name>Web.EditField.user_password</Name>
                                     <Description/>
-                                    <StartTime>2016-02-25 09:29:40.379</StartTime>
+                                    <StartTime>2016-02-29 11:03:31.597</StartTime>
                                     <Duration>1</Duration>
                                     <Result>Passed</Result>
                                     <Links/>
@@ -417,7 +462,7 @@
                                     <Data>
                                         <Name>user_password.setSecure</Name>
                                         <Description>&lt;style&gt;.ex-table{border-collapse: collapse !important;width: auto;height: auto;}.ex-table,.ex-table tr,.ex-table td{border: 1px solid #c6c6c6;}.ex-table td{padding: 5px 10px;vertical-align: top;width: auto;}.ex-table .ex-name{font-size: 13px;font-weight: bold;background-color: #f3f3f3;white-space: nowrap;}.ex-table .ex-value{color: #5a5a5a;}&lt;/style&gt;&lt;table class='ex-table'&gt;&lt;tr&gt;&lt;td class='ex-name'&gt;arg0&lt;/td&gt;&lt;td class='ex-value'&gt;56ce2c1d8de9cb7d81009affe807e0304dcff4c10b0d84cc0153b1c9&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
-                                        <StartTime>2016-02-25 09:29:39.842</StartTime>
+                                        <StartTime>2016-02-29 11:03:30.640</StartTime>
                                         <Duration>1</Duration>
                                         <Result>Passed</Result>
                                         <Links/>
@@ -471,8 +516,8 @@
                         <Data>
                             <Name>Web.Browser.Simplicity</Name>
                             <Description/>
-                            <StartTime>2016-02-25 09:29:40.842</StartTime>
-                            <Duration>7</Duration>
+                            <StartTime>2016-02-29 11:03:32.314</StartTime>
+                            <Duration>16</Duration>
                             <Result>Passed</Result>
                             <Links/>
                             <Extension>
@@ -500,8 +545,8 @@
                             <Data>
                                 <Name>Web.Page.Simplicity</Name>
                                 <Description/>
-                                <StartTime>2016-02-25 09:29:40.842</StartTime>
-                                <Duration>7</Duration>
+                                <StartTime>2016-02-29 11:03:32.314</StartTime>
+                                <Duration>16</Duration>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Extension>
@@ -533,8 +578,8 @@
                                 <Data>
                                     <Name>Web.Button.Log In</Name>
                                     <Description/>
-                                    <StartTime>2016-02-25 09:29:40.842</StartTime>
-                                    <Duration>7</Duration>
+                                    <StartTime>2016-02-29 11:03:32.313</StartTime>
+                                    <Duration>16</Duration>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Extension>
@@ -570,7 +615,7 @@
                                     <Data>
                                         <Name>Log In.click</Name>
                                         <Description/>
-                                        <StartTime>2016-02-25 09:29:40.384</StartTime>
+                                        <StartTime>2016-02-29 11:03:31.600</StartTime>
                                         <Duration>1</Duration>
                                         <Result>Passed</Result>
                                         <Links/>
@@ -620,12 +665,27 @@
                             </ReportNode>
                         </ReportNode>
                     </ReportNode>
+                    <ReportNode type="CustomStep">
+                        <Data>
+                            <Name>Log In</Name>
+                            <Description>Log In to the Application</Description>
+                            <StartTime>2016-02-29 11:03:48.268</StartTime>
+                            <Duration>0</Duration>
+                            <Result>Passed</Result>
+                            <Links/>
+                            <Extension>
+                                <Any>
+                                    <IconKey>CustomStep</IconKey>
+                                </Any>
+                            </Extension>
+                        </Data>
+                    </ReportNode>
                     <ReportNode type="Context">
                         <Data>
                             <Name>Web.Browser.Simplicity</Name>
                             <Description/>
-                            <StartTime>2016-02-25 09:29:47.130</StartTime>
-                            <Duration>5</Duration>
+                            <StartTime>2016-02-29 11:03:49.500</StartTime>
+                            <Duration>6</Duration>
                             <Result>Passed</Result>
                             <Links/>
                             <Extension>
@@ -653,8 +713,8 @@
                             <Data>
                                 <Name>Web.Page.Simplicity</Name>
                                 <Description/>
-                                <StartTime>2016-02-25 09:29:47.130</StartTime>
-                                <Duration>5</Duration>
+                                <StartTime>2016-02-29 11:03:49.500</StartTime>
+                                <Duration>6</Duration>
                                 <Result>Passed</Result>
                                 <Links/>
                                 <Extension>
@@ -686,8 +746,8 @@
                                 <Data>
                                     <Name>Web.Link.Log Out</Name>
                                     <Description/>
-                                    <StartTime>2016-02-25 09:29:47.130</StartTime>
-                                    <Duration>5</Duration>
+                                    <StartTime>2016-02-29 11:03:49.500</StartTime>
+                                    <Duration>6</Duration>
                                     <Result>Passed</Result>
                                     <Links/>
                                     <Extension>
@@ -723,8 +783,8 @@
                                     <Data>
                                         <Name>Log Out.click</Name>
                                         <Description/>
-                                        <StartTime>2016-02-25 09:29:46.526</StartTime>
-                                        <Duration>1</Duration>
+                                        <StartTime>2016-02-29 11:03:48.268</StartTime>
+                                        <Duration>2</Duration>
                                         <Result>Passed</Result>
                                         <Links/>
                                         <Extension>
@@ -768,42 +828,12 @@
                                 </ReportNode>
                             </ReportNode>
                         </ReportNode>
-                        <ReportNode type="Step">
-                            <Data>
-                                <Name>Simplicity.close</Name>
-                                <Description/>
-                                <StartTime>2016-02-25 09:29:47.132</StartTime>
-                                <Duration>5</Duration>
-                                <Result>Passed</Result>
-                                <Links/>
-                                <Extension>
-                                    <Any>
-                                        <TestObject>
-                                            <Path>
-                                                <Object>
-                                                    <Type>Web.Browser</Type>
-                                                    <Name><![CDATA[Simplicity]]></Name>
-                                                </Object>
-                                            </Path>
-                                            <Operation>close</Operation>
-                                            <OperationData/>
-                                            <Properties/>
-                                        </TestObject>
-                                        <IconKey>Browser</IconKey>
-                                        <CustomUIElements>
-                                            <DescriptionLabel>Data</DescriptionLabel>
-                                        </CustomUIElements>
-                                        <HideContextInfo>true</HideContextInfo>
-                                    </Any>
-                                </Extension>
-                            </Data>
-                        </ReportNode>
                     </ReportNode>
                     <ReportNode type="CustomStep">
                         <Data>
-                            <Name>Logout</Name>
-                            <Description>Logout Link found and clicked</Description>
-                            <StartTime>2016-02-25 09:29:51.795</StartTime>
+                            <Name>Log Out</Name>
+                            <Description>Log Out of the Application</Description>
+                            <StartTime>2016-02-29 11:03:55.220</StartTime>
                             <Duration>0</Duration>
                             <Result>Passed</Result>
                             <Links/>
@@ -815,6 +845,66 @@
                         </Data>
                     </ReportNode>
                 </ReportNode>
+            </ReportNode>
+        </ReportNode>
+        <ReportNode type="Context">
+            <Data>
+                <Name>Web.Browser.Simplicity</Name>
+                <Description/>
+                <StartTime>2016-02-29 11:03:56.074</StartTime>
+                <Duration>0</Duration>
+                <Result>Passed</Result>
+                <Links/>
+                <Extension>
+                    <Any>
+                        <TestObject>
+                            <Path>
+                                <Object>
+                                    <Type>Web.Browser</Type>
+                                    <Name><![CDATA[Simplicity]]></Name>
+                                </Object>
+                            </Path>
+                            <Operation/>
+                            <OperationData/>
+                            <Properties/>
+                        </TestObject>
+                        <IconKey>Browser</IconKey>
+                        <CustomUIElements>
+                            <DescriptionLabel>Data</DescriptionLabel>
+                        </CustomUIElements>
+                        <HideContextInfo>true</HideContextInfo>
+                    </Any>
+                </Extension>
+            </Data>
+            <ReportNode type="Step">
+                <Data>
+                    <Name>Simplicity.close</Name>
+                    <Description/>
+                    <StartTime>2016-02-29 11:03:55.426</StartTime>
+                    <Duration>1</Duration>
+                    <Result>Passed</Result>
+                    <Links/>
+                    <Extension>
+                        <Any>
+                            <TestObject>
+                                <Path>
+                                    <Object>
+                                        <Type>Web.Browser</Type>
+                                        <Name><![CDATA[Simplicity]]></Name>
+                                    </Object>
+                                </Path>
+                                <Operation>close</Operation>
+                                <OperationData/>
+                                <Properties/>
+                            </TestObject>
+                            <IconKey>Browser</IconKey>
+                            <CustomUIElements>
+                                <DescriptionLabel>Data</DescriptionLabel>
+                            </CustomUIElements>
+                            <HideContextInfo>true</HideContextInfo>
+                        </Any>
+                    </Extension>
+                </Data>
             </ReportNode>
         </ReportNode>
     </ReportNode>
